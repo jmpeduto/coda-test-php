@@ -34,7 +34,7 @@ class AssignProjectHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
             //Busca el cliente si el parametro ID fue enviado
             $project = $this->getForEdit($request);
             //Setea propiedades
-            $project->user_id = $this->getParam($request, 'client_id', '');
+            $project->client_id = $this->getParam($request, 'client_id', '');
             //Salva el proyecto
             $project->save();
         } catch (\Exception $exc) {

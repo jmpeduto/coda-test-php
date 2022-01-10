@@ -25,6 +25,11 @@ namespace App\Model;
  *  description=""
  * )
  * @OA\Property(
+ *  property="client_id",
+ *  type="integer",
+ *  description=""
+ * )
+ * @OA\Property(
  *  property="title",
  *  type="string",
  *  description=""
